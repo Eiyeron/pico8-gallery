@@ -17,3 +17,5 @@ pico8_plate.html
 dist/index.html
 dist/static/js/*
 dist/static/css/*
+dist/static/fnts/*
+dist/static/img/*
