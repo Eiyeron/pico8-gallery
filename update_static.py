@@ -5,7 +5,7 @@ import shutil
 import filecmp
 current_folder = path.dirname(__file__)
 
-folders_to_copy = ["img", "fnts"]
+folders_to_copy = ["img", "fnts", "js"]
 
 def copy_folder_to_static(folder_name, target_folder_name):
 

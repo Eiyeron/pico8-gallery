@@ -2,6 +2,7 @@ from app_env import config
 import scss.config
 from scss import Compiler
 from os import path
+import os
 
 current_folder = path.dirname(__file__)
 
@@ -15,5 +16,8 @@ def generate_sheet(origin, target):
             output.write(result)
 
 def update_style():
+    if not path.exists("dist/static/css"):
+        os.makedirs("dist/static/css")
+
     generate_sheet('index.scss', 'dist/static/css/index.css')
     generate_sheet('pico_cart_style.scss', 'dist/static/css/pico8.css')

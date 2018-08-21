@@ -15,6 +15,7 @@ dist/carts/*/*.html
 # Generated
 pico8_plate.html
 dist/index.html
+dist/tags/*
 dist/static/js/*
 dist/static/css/*
 dist/static/fnts/*
