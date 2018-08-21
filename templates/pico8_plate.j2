@@ -1,0 +1,52 @@
+{% extends "base.j2" %}
+
+{% block style %}
+<link rel="stylesheet" href="/static/css/pico8.css">
+{% endblock %}
+
+{% block main_content %}
+			<a href="/" id="cart-back-link">&lt; Return to index.</a>
+			<div id="plate" class="plate" oncontextmenu="return false;">
+				<!-- the itch app messes with the first found canvas -->
+				<canvas id="dummy4itchapp" style="position:absolute;visibility:hidden;width:0;height:0;"></canvas>
+
+				<div id="frame" class=center style="visibility:hidden;"> <!-- firefox can't resize a fullscreen canvas (?)-->
+					<canvas class="emscripten pixels" id="canvas" oncontextmenu="event.preventDefault()" tabindex="1"></canvas>
+				</div>
+
+				<div id="menubar" class=menubar>
+
+					<div class=button onclick="Module.pico8Reset();">
+						<img alt="Reset" height=12 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaklEQVR4Ae2dOwoAMQhE15A+rfc/3bZ7AlMnQfywCkKsfcgMM9ZP+QHtIn0vLeBAFduiFdQ/0DmvtR5LXJ6CPSXe2ZXcFNlTxFbemKrbZPs35XogeS9xeQr+anT6LzoOwEDwZJ7jwhXUnwkTTiDQ2Ja34AAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII="/>
+					</div>
+
+					<div class=button onclick="Module.pico8TogglePaused();">
+						<img alt="Pause" height=12 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAPUlEQVR4Ae3doQ0AIAxEUWABLPtPh2WCq26DwFSU/JPNT166QSu/Hg86W9dwLte+diP7AwAAAAAAgD+A+jM2ZAgo84I0PgAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII="/>
+					</div>
+
+					<div class=button onclick="toggleFullscreen();">
+						<img alt="Fullscreen" height=12 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaklEQVR4Ae2dsQ1AIQhExfze1v2ns3UCrfgFhmgUUAoGgHscp21wX9BqaZoDojbB96OkDJKNcTN2BHTyYNYmoT2BlPL7BKgcPfHjAVXKKadkHOn9K1r16N0czN6a95N8mnA7Aq2fTZ3Af3UKmCSMazL8HwAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII="/>
+					</div>
+
+					<div class=button onclick="Module.pico8ToggleSound();">
+						<img alt="Toggle Sound" height=12 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAXklEQVR4Ae2doQ4AIQxD4YLH8v9fh+ULhjpxxSwLg2uyapr1JRu1iV5Z+1BGl4+xNpX38SYo2uRvYiT5LwEmt+ocgXVLrhPEgBiw8Q5w7/kueSkK+D2tJO4E/I3GrwkqQCBabEj/4QAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII="/>
+					</div>
+
+					<a class=button target="_new" href="http://www.lexaloffle.com/bbs/?cat=7&sub=2" >
+						<img  alt="More Carts" height=12 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlElEQVR4Ae2dMQ5FQBCGh6jcwAkkateg3DiAa+iQUGqVKi95FQfAJRQOoHeBUf8JyQqKjZ1uMzuz2e/LTE3KhyF7kSlgLOykas23f6D+A9Yp84aAOYU15pcJnfji0Il2ID8HzC4y38ZrnfIBGxeRoR3c3EWrACdsV5BOsx7OSRnrOXh4F5HzA6bevwUn8wlz7eCDsQM99B3ks0s/4QAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII="/>
+					</a>
+
+				</div>
+
+			</div>
+{% endblock %}
+{% block post_main%}
+<div id="start-button" onclick="loadCart();"></div>
+{% endblock %}
+{%block post_body %}
+<script>
+		pico8_export_source = "##js_file##";
+</script>
+<script src="/static/js/pico8_extra.js"></script>
+{% endblock %}
+</html>

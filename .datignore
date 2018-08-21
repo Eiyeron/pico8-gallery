@@ -1,0 +1,8 @@
+.git
+.dat
+.vscode
+node_modules
+*.log
+**/.DS_Store
+Thumbs.db
+__pycache__

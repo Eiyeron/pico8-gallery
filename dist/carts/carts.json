@@ -1,0 +1,102 @@
+{
+    "bw": {
+        "name": "BW",
+        "info": "This project was an attempt at making a narrative game with tidbits of story and a few ideas.",
+        "tags": ["game", "stalled"]
+    },
+    "coro": {
+        "name": "Coro",
+        "info": "A game idea mostly built after discovering coroutines. Seems like a level is broken in one tile. This will be fixed later.",
+        "tags": ["game", "stalled", "broken"]
+    },
+    "mother3": {
+        "name": "Mother 3 battle mockup",
+        "info": "Goofing around redoing once more a Mother-3 esque battle screen.",
+        "tags": ["mockup", "sound", "music"]
+    },
+    "boat": {
+        "name": "Boat",
+        "info": "A small boat. That's the first sketch with my technique to make clouds.",
+        "tags": ["sketch"]
+    },
+    "moonlight": {
+        "name": "Moonlight",
+        "info": "A small calming scene. I loved to let it run on my desktop while working.",
+        "tags": ["sketch"]
+    },
+    "synthwave": {
+        "name": "Synthwave surfing",
+        "info": "A small sketch a bit too cybre.",
+        "tags": ["sketch"]
+    },
+    "slide": {
+        "name": "Slide",
+        "info": "A rhythmed scene. I don't remember what inspired me to do this, maybe some sliding triangles.",
+        "tags": ["sketch"]
+    },
+    "tubes": {
+        "name": "Tubes",
+        "info": "Oh yeah,that was the sketch that inspired me to make the Slide one. Ronflaix is one of my alternate names, I wanted to make something with sprite rotation.",
+        "tags": ["sketch"]
+    },
+    "riverside": {
+        "name": "River side",
+        "info": "A weekly sketch. I'm thinking the sky should also have been animated. How about shooting stars?",
+        "tags": ["sketch", "weekly"]
+    },
+    "towers": {
+        "name": "Towers",
+        "info": "A weekly sketch. The original version had the wrong depth effect.",
+        "tags": ["sketch", "weekly"]
+    },
+    "island": {
+        "name": "Island",
+        "info": "A weekly sketch. I wish I made a windmill.",
+        "tags": ["sketch", "weekly", "3D"]
+    },
+    "sphere": {
+        "name": "Sphere",
+        "info": "One of my favorites 3D sketches.",
+        "tags": ["sketch", "weekly", "3D"]
+    },
+    "3d_wave": {
+        "name": "Waves",
+        "info": "The last sketch I did in 2017.",
+        "tags": ["sketch", "3D"]
+    },
+    "door": {
+        "name": "Door",
+        "info": "A weekly sketch. Remake of a scene in BW. I wish I finished it.",
+        "tags": ["sketch", "weekly", "3D"]
+    },
+    "tunnel": {
+        "name": "Nuclear Throne's level vortex",
+        "info": "\"It's not fair, it's not right, there's no reason to fight.\" A weekly sketch inspired by Nuclear Throne, a game I enjoyed a lot.",
+        "tags": ["sketch", "weekly"]
+    },
+    "kites": {
+        "name": "Kites",
+        "info": "A weekly sketch. Fun fact : the first version had the wind going in the opposite direction. Did you know I'm bad at making stuff that moves in the right direction?",
+        "tags": ["sketch", "weekly"]
+    },
+    "aurora": {
+        "name": "Aurora",
+        "info": "A weekly sketch. Fun fact : the previous version had a eye monster instead of the facing character. It felt too outlandish from the scene.",
+        "tags": ["sketch", "weekly"]
+    },
+    "feisar": {
+        "name": "Low-poly Feisar ship",
+        "info": "I'm a fan of the Wipeout series. I did a custom low-poly version of HD's Feisar and rolled with it. Fun fact: the gauges are CPU and memory usage gauges.",
+        "tags": ["sketch", "weekly", "3D"]
+    },
+    "regret": {
+        "name": "That chicken",
+        "info": "\"I regret nothing.\"",
+        "tags": ["sketch", "weekly", "meme"]
+    },
+    "ramiel": {
+        "name": "Ramiel",
+        "info": "An inside joke among friends.",
+        "tags": ["sketch", "meme"]
+    }
+}

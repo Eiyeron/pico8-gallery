@@ -1,0 +1,74 @@
+@import "base";
+
+
+/** Cart list **/
+#cart_list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/** Pico-8 cart entry **/
+.entry {
+    @extend %shadowed;
+
+    background: $picoCartLightGray;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    padding: 8px;
+    display: block;
+
+    width: 100%;
+
+    // Responsive width tweak
+    @media all and (min-width: 1200px) {
+        max-width: 30%;
+        width: 30%;
+    }
+
+    @media all and (min-width: 900px) {
+        max-width: 45%;
+        margin-bottom: 16px;
+    }
+
+    // Cart picture
+    .cart {
+        @extend %shadowed;
+        margin: 0;
+        margin-right: 16px;
+        float:left;
+    }
+
+    // Text and tags
+    .info {
+        .name {
+            font-family: $fontTitle;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .description {
+            text-align: justify;
+        }
+    }
+
+    .tag {
+        @extend %link-style;
+        font-size: 0.8em;
+        border-radius: 16px;
+        border: solid 1px #303030;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+
+        &[data-active="true"] {
+            background: white;
+            color: #303030;
+        }
+    }
+
+}

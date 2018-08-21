@@ -1,0 +1,24 @@
+{% extends "base.j2" %}
+{% import 'cart.j2' as cart -%}
+
+{% block style %}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock %}
+
+{% block main_content %}
+    {%- if page_kind == "tag" -%}
+    {# TODO : provide a way to get back index url #}
+    <h2 id="showing"> Showing carts with tag {{tag}}.</h2>
+    <div class="breadcrumb"><a href="/">&lt; Return to index.</a></div>
+    {% else %}
+    <h2 id="showing">Showing all carts.</h2>
+    {% endif %}
+    <div id="cart_list">{% for cart_entry in carts %}
+        {{cart.cart_entry(cart_entry.name, cart_entry.page_url, cart_entry.image_url, cart_entry.description, cart_entry.tags, tag)|indent -}}
+    {% endfor %}
+    </div>
+{% endblock main_content %}
+
+{% block post_body %}
+    <script src="/static/js/tags.js"></script>
+{% endblock %}

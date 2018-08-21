@@ -1,0 +1,19 @@
+{% macro cart_entry(name, page_url, image_url, description, tags=[], active_tag=None) %}
+<div class="entry shadowed">
+    <a href="{{page_url}}">
+        <img class="cart shadowed" src="{{image_url}}" width="160px" height="205px">
+    </a>
+    <div class="info">
+        <h1 class="name">{{name}}</h1>
+        <p class="description">{{description}}</p>
+    </div>
+    <div class="tags">{% for tag in tags %}
+        {% if tag == active_tag -%}
+            <a href="/" class="tag" data-tag="{{tag}}" data-active="true">{{tag}}</a>
+        {% else -%}
+            <a href="/tags/{{tag}}.html" class="tag" data-tag="{{tag}}">{{tag}}</a>
+        {% endif -%}
+    {%- endfor %}
+    </div>
+</div>
+{%- endmacro %}

@@ -1,0 +1,19 @@
+.git
+.dat
+.vscode
+&node_modules
+*.log
+**/.DS_Store
+Thumbs.db
+__pycache__
+
+conf.ini
+
+# Need to generate the carts instead of possibly storing outdated versions
+dist/carts/*/*.js
+dist/carts/*/*.html
+# Generated
+pico8_plate.html
+dist/index.html
+dist/js/*
+dist/css/*

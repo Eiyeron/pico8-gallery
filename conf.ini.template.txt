@@ -1,0 +1,9 @@
+[Path]
+static_dir=/static
+root_dir=/
+tags_dir=dist/tags
+cart_dir=dist/carts
+
+[Pico8]
+pico_exe=
+pico_appdata=

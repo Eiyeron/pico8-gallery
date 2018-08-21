@@ -1,0 +1,81 @@
+$fontTitle: "x14y24HeadUpDisplay", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fontText: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$picoCartDarkGray: #303030;
+$picoCartLightGray: #626562;
+
+@font-face {
+    font-family: x14y24HeadUpDisplay;
+    src: url("/static/fnts/x14y24pxHeadUpDaisy.ttf")
+}
+
+body {
+    background-color: $picoCartDarkGray;
+    margin: 0;
+
+    min-height: 100vh;
+
+    color: white;
+    font-family: $fontText;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+// Small style helper
+%shadowed {
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(2px 2px 2px #222);
+}
+
+// Making a common font style for titles
+%title-style {
+    color: white;
+    font-family: $fontTitle;
+}
+
+%link-style {
+    color:lightblue;
+    text-decoration: none;
+}
+
+%banner-style {
+    @extend %shadowed;
+    background: $picoCartLightGray;
+    margin: 0;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 8px;
+    padding-left: 24px;
+}
+
+#site-header {
+    @extend %banner-style;
+    background: $picoCartLightGray;
+    padding: 8px;
+    padding-left: 24px;
+    margin-bottom: 24px;
+
+    h1 {
+        @extend %title-style;
+        margin: 0;
+        font-size: 48px;
+    }
+}
+
+#site-footer {
+    @extend %banner-style;
+    text-align: center;
+    margin-top: 24px;
+}
+
+main {
+    flex-grow: 1;
+    margin-left: 48px;
+    margin-right: 48px;
+
+    #showing {
+        @extend %title-style;
+    }
+}

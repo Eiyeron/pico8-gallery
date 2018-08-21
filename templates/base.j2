@@ -1,0 +1,26 @@
+{% import 'cart.j2' as cart -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block style %}{% endblock %}
+    <title>Pico-8 Gallery</title>
+</head>
+<body>
+    <header id="site-header">
+        <h1>Pico-8 gallery</h1>
+    </header>
+    <main data-page_kind="{{page_kind}}">
+    {% block main_content %}
+    {% endblock %}
+    </main>
+    {% block post_main %}
+    {% endblock %}
+    <footer id="site-footer">
+        <p>This is a work-in-progress <a href="https://www.lexaloffle.com/pico-8.php">Pico-8</a> gallery. If not indicated, all carts are here <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-SA-NC 3.0.</a></p>
+    </footer>
+</body>
+{%block post_body %}{% endblock %}
+</html>
