@@ -4,6 +4,11 @@
         "info": "This project was an attempt at making a narrative game with tidbits of story and a few ideas.",
         "tags": ["game", "stalled"]
     },
+    "prelude": {
+        "name": "Prelude",
+        "info": "BW's second iteration.",
+        "tags": ["game", "stalled"]
+    },
     "coro": {
         "name": "Coro",
         "info": "A game idea mostly built after discovering coroutines. Seems like a level is broken in one tile. This will be fixed later.",
