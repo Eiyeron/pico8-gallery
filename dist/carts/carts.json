@@ -103,5 +103,15 @@
         "name": "Ramiel",
         "info": "An inside joke among friends.",
         "tags": ["sketch", "meme"]
+    },
+    "nineties": {
+        "name": "Nineties",
+        "info": "One half of a video involving this and a vaporvawe of \"Running in the 90s\".",
+        "tags": ["sketch", "3D", "meme"]
+    },
+    "coyote": {
+        "name": "Spinning coyote",
+        "info": "The legend. Now on Pico-8",
+        "tags": ["sketch", "3D", "meme"]
     }
 }
