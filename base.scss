@@ -24,7 +24,7 @@ body {
 
 // Small style helper
 %shadowed {
-    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    -webkit-filter: drop-shadow(2px 2px 2px #222 );
     filter: drop-shadow(2px 2px 2px #222);
 }
 
@@ -77,5 +77,41 @@ main {
 
     #showing {
         @extend %title-style;
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid $picoCartLightGray;
+        margin: 1em 0;
+        padding: 0;
+    }
+}
+
+#links {
+    h2 {
+        @extend %title-style;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        a {
+            @extend %link-style;
+            @extend %shadowed;
+            padding: 8px;
+            display: block;
+            min-height: 24px;
+            background-color: $picoCartLightGray;
+            border-radius: 2px;
+        }
+        :after {
+            content:">";
+            color: $picoCartDarkGray;
+            text-align: right;
+            float:right;
+        }
     }
 }

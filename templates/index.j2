@@ -17,8 +17,18 @@
         {{cart.cart_entry(cart_entry.name, cart_entry.page_url, cart_entry.image_url, cart_entry.description, cart_entry.tags, tag)|indent -}}
     {% endfor %}
     </div>
+    {% if links|length > 0 %}
+    <hr />
+    <nav id="links">
+        <h2>Links</h2>
+        <ul>
+        {% for link_title, link_url in links %}
+            <li><a href="{{link_url}}">{{link_title}}</a></li>
+        {% endfor %}
+        </ul>
+    </nav>
+    {% endif %}
 {% endblock main_content %}
-
 {% block post_body %}
     <script src="/static/js/tags.js"></script>
 {% endblock %}

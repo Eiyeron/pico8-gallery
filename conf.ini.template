@@ -7,3 +7,6 @@ cart_dir=dist/carts
 [Pico8]
 pico_exe=
 pico_appdata=
+
+[Links]
+id=Title,http://example.com
