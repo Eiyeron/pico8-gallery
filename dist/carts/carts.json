@@ -79,6 +79,11 @@
         "info": "\"It's not fair, it's not right, there's no reason to fight.\" A weekly sketch inspired by Nuclear Throne, a game I enjoyed a lot.",
         "tags": ["sketch", "weekly"]
     },
+    "new_tunnel": {
+        "name": "Nuclear Throne's level vortex variant",
+        "info": "A variant of the level vortex cart that uses some of the new palette colors.",
+        "tags": ["sketch"]
+    },
     "kites": {
         "name": "Kites",
         "info": "A weekly sketch. Fun fact : the first version had the wind going in the opposite direction. Did you know I'm bad at making stuff that moves in the right direction?",
@@ -113,5 +118,21 @@
         "name": "Spinning coyote",
         "info": "The legend. Now on Pico-8",
         "tags": ["sketch", "3D", "meme"]
+    },
+    "radar": {
+        "name": "Radar",
+        "info": "Status: -OK-",
+        "tags": ["sketch"]
+    },
+    "wrapagift": {
+        "name": "Wrap'a'Gift",
+        "info": "Pico8 Advent Calendar 2019 submission. A rhythm game to wrap gifts for Santa!",
+        "tags": ["game", "jam"]
+    },
+    "roto": {
+        "name": "Rotoscale demo",
+        "info": "I redid my first cart 5 years later. Now it runs at 30 FPS.",
+        "tags": ["sketch", "demo"]
     }
+
 }
