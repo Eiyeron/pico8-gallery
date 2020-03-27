@@ -38,10 +38,13 @@ def determine_cart_url(cart, folder_name):
     url_cart_root = build_url("carts", folder_name)
     fs_cart_root = path.join(config["Path"]["cart_dir"], folder_name)
 
+    html_path = path.join(fs_cart_root, folder_name+".html")
+
     if "index" in cart:
         return build_url(fs_cart_root, cart["index"])
-
-    elif path.isfile(path.join(fs_cart_root, folder_name+".html")):
+    elif path.isfile(html_path):
+        return path.join(url_cart_root, folder_name+".html")
+    elif path.isfile(html_path.lower()):
         return path.join(url_cart_root, folder_name+".html")
 
     return "#"
@@ -59,6 +62,8 @@ def load_carts(file_path):
         for key in data:
             cart = data[key]
             index_file = determine_cart_url(cart, key)
+            if index_file == "#":
+                print(f"!! Missing player for {cart['name']}")
 
             img_file = determine_image_url(cart, key)
 

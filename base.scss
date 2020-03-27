@@ -114,4 +114,7 @@ main {
             float:right;
         }
     }
+    li + li {
+        margin-top: 8px;
+    }
 }
