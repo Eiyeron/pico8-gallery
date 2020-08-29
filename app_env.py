@@ -68,6 +68,7 @@ def load_carts(file_path):
             img_file = determine_image_url(cart, key)
 
             cart_entries.append({
+                "folder": key,
                 "name": cart["name"],
                 "description": cart["info"],
                 "page_url": index_file,
